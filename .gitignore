@@ -1,0 +1,34 @@
+###> gfi-centre-ouest/docker-devbox ###
+docker-compose.yml
+*ddb.local.*
+.bin/psql
+.bin/pg_dump
+.docker/postgres/fixuid.tar.gz
+.docker/postgres/Dockerfile
+.docker/php/Dockerfile
+.docker/php/fixuid.tar.gz
+.docker/node/fixuid.tar.gz
+.docker/node/Dockerfile
+.docker/web/apache.conf
+.docker/web/Dockerfile
+.bin/composer
+.bin/php
+.certs/api.ddb-quickstart.test.key
+.certs/api.ddb-quickstart.test.crt
+/.bash_enter
+/.bash_leave
+/.certs/api.ddb-guide-psql-symfony-vue.test.key
+/.certs/api.ddb-guide-psql-symfony-vue.test.crt
+/.certs/.signer.crt
+/.bin/node
+/.docker/node/Dockerfile
+/.bin/npm
+/.certs/ddb-guide-psql-symfony-vue.test.key
+/.certs/ddb-guide-psql-symfony-vue.test.crt
+/.bin/ncu
+/.bin/npx
+/.bin/vue
+/.bin/symfony
+/.docker/node/fixuid.tar.gz
+###< gfi-centre-ouest/docker-devbox ###
+

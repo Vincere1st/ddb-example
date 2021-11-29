@@ -1,0 +1,15 @@
+FROM node:lts-alpine
+LABEL maintainer="Vincent Ostyn<vincerecaro@gmail.com>"
+
+RUN npm i --global npm
+WORKDIR /app
+
+USER node
+RUN npm config set prefix /home/node/.npm-packages
+ENV PATH="${PATH}:/home/node/.npm-packages/bin"
+
+RUN npm install -g npm-check-updates
+RUN npm install -g @vue/cli
+
+VOLUME /app
+VOLUME /home/node/.cache
