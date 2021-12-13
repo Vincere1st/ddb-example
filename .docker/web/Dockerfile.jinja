@@ -1,7 +1,7 @@
 FROM httpd:2.4.39
 LABEL maintainer="Vincent Ostyn<vincerecaro@gmail.com>"
 
-COPY .ca-certificates/* /usr/local/share/ca-certificates/
+#COPY .ca-certificates/* /usr/local/share/ca-certificates/
 RUN apt-get update && apt-get install -y ca-certificates && rm -rf /var/lib/apt/lists/* \
 && update-ca-certificates
 
